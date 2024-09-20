@@ -1,5 +1,5 @@
 {% set name = "oracle-ads" %}
-{% set version = "2.11.17" %}
+{% set version = "2.11.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oracle_ads-{{ version }}.tar.gz
-  sha256: 615342f2573dad0af62fe94d781ab15744bacd78c4375c434e1573a95944f8a3
+  sha256: 627be54989cfff9a8fd0b99dafd9a226eee9ec9e1980a280d8dfb2a3009432f7
 
 build:
   noarch: python
