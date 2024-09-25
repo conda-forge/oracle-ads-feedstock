@@ -1,5 +1,5 @@
 {% set name = "oracle-ads" %}
-{% set version = "2.11.18" %}
+{% set version = "2.11.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oracle_ads-{{ version }}.tar.gz
-  sha256: 627be54989cfff9a8fd0b99dafd9a226eee9ec9e1980a280d8dfb2a3009432f7
+  sha256: 6d36c5e0b27958827cd462e469ef7c06b209e9c90d4b8a6f8873deb8ac863212
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - flit-core >=3.8,<4
     - pip
   run:
+    - pydantic >=2.6.3
     - python >=3.8
     - pyyaml >=6
     - asteval >=0.9.25
