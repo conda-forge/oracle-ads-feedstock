@@ -1,5 +1,5 @@
 {% set name = "oracle-ads" %}
-{% set version = "2.12.8" %}
+{% set version = "2.12.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oracle_ads-{{ version }}.tar.gz
-  sha256: 7722d78ad85b873cc358614cf14bd1d3ae5962b9cfd8bf27a005a740392b885c
+  sha256: 030cf37ebccee21a99a09d2447dbcc1da510c4cbc0f01b2ab32ca0df763f7ef7
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ requirements:
     - psutil >=5.7.2
     - python_jsonschema_objects >=0.3.13
     - requests
-    - scikit-learn >=1.0
+    - scikit-learn >=1.0,<1.6.0
     - tabulate >=0.8.9
     - tqdm >=4.59.0
 
