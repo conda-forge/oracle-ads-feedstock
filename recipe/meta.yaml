@@ -1,5 +1,5 @@
 {% set name = "oracle-ads" %}
-{% set version = "2.12.11" %}
+{% set version = "2.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oracle_ads-{{ version }}.tar.gz
-  sha256: 18bf499794d7ae04f794c5c56dda70fb239121c3da3279517cc92c8876898355
+  sha256: 972ca7902dce413cadeb8bf75c7d2308720c9b5f30979a5e0e592314767963d4
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ requirements:
     - jinja2 >=2.11.2
     - matplotlib-base >=3.1.3,<=3.8.4
     - numpy >=1.19.2,<2.0.0
-    - oci >=2.125.3
+    - oci >=2.144.1
     - ocifs >=1.1.3
     - pandas >1.2.1
     - psutil >=5.7.2
